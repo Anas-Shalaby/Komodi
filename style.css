@@ -229,7 +229,7 @@ header {
 .card {
   background-color: var(--dark-grey);
   padding: 6rem 3rem;
-  transition: all 0.4s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 .card i {
@@ -249,7 +249,6 @@ header {
 }
 .card:nth-child(3) {
   position: relative;
-  background-color: var(--dark-grey);
 }
 .card:nth-child(3)::before {
   content: "";
@@ -274,6 +273,7 @@ header {
 }
 /* Card hover effect */
 .card:hover,
+/* .card:nth-child(3):hover, */
 .card:first-child {
   background-color: var(--red);
   color: var(--white);
