@@ -1,0 +1,73 @@
+/* Media Queries */
+/* Devices Below 600px */
+
+@media screen and (max-width: 600px) {
+  .nav-ul {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    margin-top: 1rem;
+    background-color: black;
+    z-index: 1000;
+  }
+  .nav .logo {
+    font-size: 3.3rem;
+  }
+  .nav-ul li {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .nav-ul li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .nav-link::before,
+  .active::before {
+    content: "";
+    display: none;
+  }
+  .searching {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav-ul .close {
+    display: block;
+  }
+  .show {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  .intro-text {
+    width: 100%;
+  }
+  .intro-text h1 {
+    font-size: 6rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact > * {
+    margin: 3rem 0;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .image-text {
+    width: 100%;
+  }
+  .image-text h3 {
+    font-size: 1rem !important;
+  }
+  .image-text h3,
+  .image-text p {
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+}
