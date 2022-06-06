@@ -53,6 +53,9 @@
   .contact > * {
     margin: 3rem 0;
   }
+  .services .service {
+    padding: 1.6rem 0.8rem;
+  }
   .about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
